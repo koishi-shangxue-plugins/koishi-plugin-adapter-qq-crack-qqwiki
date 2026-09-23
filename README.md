@@ -1,6 +1,6 @@
 # QQ 机器人开发文档同步仓库
 
-这个仓库通过 GitHub Actions 每周一自动同步 QQ 机器人官方开发文档。
+这个仓库通过 GitHub Actions 每天自动同步 QQ 机器人官方开发文档。
 
 ## 文件说明
 
@@ -8,11 +8,11 @@
 - `sync_qq_bot_docs.py`：启动全新的无缓存 Chromium，调用用户脚本下载文档，并安全覆盖本仓库。
 - `requirements.txt`：固定 Python Playwright 版本。
 - `.github/qq-bot-docs-sync.json`：记录当前同步版本和由脚本管理的 Markdown 文件。
-- `.github/workflows/sync-qq-bot-docs.yml`：每周一运行的 GitHub Actions 工作流。
+- `.github/workflows/sync-qq-bot-docs.yml`：每天运行的 GitHub Actions 工作流。
 
 ## GitHub Actions
 
-工作流在每周一北京时间 10:17 自动运行，也可以在仓库的 `Actions` 页面手动运行。
+工作流在每天北京时间 08:00 自动运行，也可以在仓库的 `Actions` 页面手动运行。
 
 首次推送到 GitHub 后，请确认仓库允许 Actions 写入：
 
